@@ -1,6 +1,6 @@
 import React from "react";
 
-const User = ({ onLogout }) => {
+const UserDashboard = ({ onLogout }) => {
   return (
     <div className="h-screen flex">
       <nav className="w-64 bg-slate-900"></nav>
@@ -22,4 +22,4 @@ const User = ({ onLogout }) => {
   );
 };
 
-export default User;
+export default UserDashboard;
