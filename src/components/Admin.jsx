@@ -1,6 +1,6 @@
 import React from "react";
 
-const Admin = ({ onLogout }) => {
+const AdminDashboard = ({ onLogout }) => {
   return (
     <div className="h-screen flex">
       <nav className="w-64 bg-slate-900"></nav>
@@ -22,4 +22,4 @@ const Admin = ({ onLogout }) => {
   );
 };
 
-export default Admin;
+export default AdminDashboard;
