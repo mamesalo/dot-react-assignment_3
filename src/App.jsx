@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Login from "./components/Login";
-import Admin from "./components/Admin";
-import User from "./components/user";
+import AdminDashboard from "./components/AdminDashboard";
+import User from "./components/UserDashboard";
 
 const App = () => {
   const [isLoggedIn, setisLoggedIn] = useState(false);
@@ -10,7 +10,7 @@ const App = () => {
     if (!isLoggedIn) {
       return <Login onLogin={setisLoggedIn} setType={settype} />;
     } else if (isLoggedIn && type == "admin") {
-      return <Admin onLogout={logout} />;
+      return <AdminDashboard onLogout={logout} />;
     } else if (isLoggedIn && type == "user") {
       return <User onLogout={logout} />;
     }
